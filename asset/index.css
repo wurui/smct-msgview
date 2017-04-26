@@ -1,3 +1,15 @@
-.oxmod-smct-msgview{
-/* CSS */
- }
+.oxmod-smct-msgview {
+  /* CSS */
+  color: #333;
+  font-size: 15px;
+}
+.oxmod-smct-msgview > div {
+  padding: 5px 0;
+}
+.oxmod-smct-msgview > h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.oxmod-smct-msgview .imgs img {
+  width: 100%;
+}

@@ -2,9 +2,19 @@
     <xsl:template match="/root" name="wurui.smct-msgview">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-smct-msgview" ox-mod="smct-msgview">
-            <h1>
-                This is mod smct-msgview;
-            </h1>
+            <div>
+                理由:交通事故
+            </div>
+            <h3>
+                附图:
+            </h3>
+            <div class="imgs">
+                <p> <img src="http://i.oxm1.cc/uploads/git/wurui/img/2ahdk0biaTj1yt1a7iR9b98A1guk-667.jpg@!w360"/>
+                </p>
+                <p>
+                    <img src="http://i.oxm1.cc/uploads/git/wurui/img/2ahdk0cclTj1yt19d7R9vyzA3ctz-666.jpg@!w360"/>
+                </p>
+            </div>
         </div>
     </xsl:template>
 </xsl:stylesheet>
