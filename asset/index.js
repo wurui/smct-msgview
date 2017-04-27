@@ -13,7 +13,11 @@ define(['zepto','mustache','oxjs'],function(undef,Mustache,OXJS){
         var _id=OXJS.queryString('_id');
 
         if(_id){
-            $.getJSON('http://localhost:8000/carnotify/getnotify?_id='+_id+'&callback=?',function(data){
+            var apiHost = 'http://www.shaomachetie.com';
+            if(document.documentElement.getAttribute('env')=='local') {
+                apiHost = 'http://localhost:8000'
+            }
+            $.getJSON(apiHost+'/carnotify/getnotify?_id='+_id+'&callback=?',function(data){
                 if(data && data.sts) {
                     data.time = timeformat(data.sts);
                     $mod.html(Mustache.render($('.J_tpl', $mod).html(), data))
