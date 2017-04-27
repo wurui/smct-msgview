@@ -13,3 +13,9 @@
 .oxmod-smct-msgview .imgs img {
   width: 100%;
 }
+.oxmod-smct-msgview .empty {
+  padding: 30px;
+  text-align: center;
+  color: #999;
+  font-size: 15px;
+}
