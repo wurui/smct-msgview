@@ -20,6 +20,7 @@ define(['zepto','mustache','oxjs'],function(undef,Mustache,OXJS){
             $.getJSON(apiHost+'/carnotify/getnotify?_id='+_id+'&callback=?',function(data){
                 if(data && data.sts) {
                     data.time = timeformat(data.sts);
+                    data.imgs=data.imgs.split(',')
                     $mod.html(Mustache.render($('.J_tpl', $mod).html(), data))
                 }else{
                     $mod.html('<div class="empty">页面已过期</div>');
