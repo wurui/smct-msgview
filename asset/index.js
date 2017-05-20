@@ -13,7 +13,7 @@ define(['zepto','mustache','oxjs'],function(undef,Mustache,OXJS){
         var _id=OXJS.queryString('_id');
 
         if(_id){
-            var apiHost = 'http://www.shaomachetie.com';
+            var apiHost = '//www.shaomachetie.com';
             if(document.documentElement.getAttribute('env')=='local') {
                 apiHost = 'http://localhost:8000'
             }
