@@ -2,16 +2,99 @@
 /* CSS */
   color:#333;
   font-size:15px;
-  >div{
-    padding:5px 0;
-  }
-  >h3{
-    font-size:15px;
-    font-weight: 400;
+  .msg-box{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin:10px;
+    padding:10px;
+    box-shadow: 2px 2px 2px #999;
+    >big{
+      color:#f60;
+    }
+    >.time{
+      font-size:12px;
+      color:#999;
+      margin:5px 0 0;
+
+    }
+    >h3{
+      font-size:14px;
+      margin:0;
+      font-weight: 400;
+      color:#888;
+    }
   }
   .imgs{
+    //background-color: #f5f5f5;
+    //border-radius: 10px;
+    margin:10px;
+
     img{
+      border-radius: 5px;
       width:100%;
+      box-shadow: 2px 2px 2px #999;
+
+    }
+  }
+  .input{
+    text-align: center;
+    input{
+      border: solid 1px #ccc;
+      border-radius: 5px;
+      width: 90%;
+      padding:5px;
+      height:24px;
+      line-height: 24px;
+      font-size:15px;
+    }
+  }
+  .shortcuts{
+    padding:10px;
+    >h3{
+      font-size:14px;
+      font-weight: 400;
+    }
+    button{
+      color:#09c;
+      background-color: transparent;
+      outline: none;
+      border:solid 1px #ccc;
+      font-size:13px;
+      border-radius: 5px;
+    }
+  }
+  .echo{
+    text-align: right;
+    padding:5px 10px;
+    >span{
+
+      border-radius: 10px;
+      padding:5px 10px;
+      background-color: #00f34f;
+      color:#fff;
+      box-shadow: 2px 2px 2px #999;
+      display: inline-block;
+      margin-bottom: 5px;
+      font-size:14px;
+      &.sendno:before{
+        content: '发送车主手机号';
+      }
+      &.msd:before{
+        content: '马上到';
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        width:0;
+        height: 0;
+        border-width:6px;
+        border-color:transparent transparent transparent #00f34f;
+        border-style: solid;
+        margin-right:-7px;
+        margin-top:15px;
+        transform: rotate(-70deg);
+      }
+
     }
   }
   .empty{
