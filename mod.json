@@ -1,11 +1,11 @@
 {
 	"RULE_VERSION":"20180724",
-  "name": "smct-msgview",
-  "version": "0.0.1",
-  "apiDependencies": [
-	  {
-	    "name": "post-message"
-	  }
+	"name": "smct-msgview",
+	"version": "0.1.0",
+	"apiDependencies": [
+		{
+			"name": "user-comment"
+		}
 	]
 
 }
