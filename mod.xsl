@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
     <xsl:template match="/root" name="wurui.smct-msgview">
-        <xsl:param name="operation"/>
+        
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-smct-msgview" ox-mod="smct-msgview">
             <xsl:variable name="msg" select="data/user-comment/i[1]"/>
